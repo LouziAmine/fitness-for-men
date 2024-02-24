@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms'; // Import FormsModule
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SplashscreenComponent } from './splashscreen/splashscreen.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SplashscreenComponent
+    SplashscreenComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
