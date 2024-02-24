@@ -1,3 +1,36 @@
-<p>home works!</p>
+<!--<style>-->
+<!--  .dot {-->
+<!--    height: 100px;-->
+<!--    width: 100px;-->
+<!--    background-color: #bbb;-->
+<!--    border-radius: 50%;-->
+<!--    display: inline-block;-->
 
-<a routerLink="/">Let's move now</a>
+<!--    border: 5px solid white;-->
+<!--    -->
+
+<!--  }-->
+<!--</style>-->
+
+<div class="Home__Core">
+  <p class="Home__Core__Title">Make it easier to <br>  shape your body!</p>
+
+<!--  Exersise -->
+<!--  <div  class="Home__Core__Exercise" style="display:flex ;  width:100% ; overflow-x: auto ; text-align:center;">-->
+<!--    <span class="dot"></span>-->
+<!--    <span class="dot"></span>-->
+<!--    <span class="dot"></span>-->
+<!--    <span class="dot"></span>-->
+<!--    <span class="dot"></span>-->
+<!--    <span class="dot"></span>-->
+<!--  </div>-->
+
+<!--  Program  -->
+  <div class="Home__Core__Program" *ngFor="let item of items" [ngStyle]="{ 'background-image': 'url(' + item.imageUrl + ')' }">
+    <p class="Home__Core__Program__Title">{{ item.title }}</p>
+    <p class="Home__Core__Program__Time_Episodes">{{ item.time }} &nbsp;  &nbsp; {{ item.episodes }}</p>
+  </div>
+  <a routerLink="/">Let's move now</a>
+</div>
+
+

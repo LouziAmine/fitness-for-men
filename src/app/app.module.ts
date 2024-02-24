@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SplashscreenComponent } from './splashscreen/splashscreen.component';
 import { HomeComponent } from './home/home.component';
+import {HomeService} from './home.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HomeComponent } from './home/home.component';
     FormsModule
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    HomeService
   ],
   bootstrap: [AppComponent]
 })
